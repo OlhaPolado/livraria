@@ -1,3 +1,8 @@
+@font-face {
+    font-family: book;
+    src: url(Book.ttf);
+}
+
 /* estilos.css */
 
 /* Reset de Estilos */
@@ -8,12 +13,12 @@
 }
 
 body {
-    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    font-family: "Book",Arial, sans-serif; /* Define a fonte padrão */
     background-color: #f0f0f0; /* Define a cor de fundo */
 }
 
 header {
-    background-color: #333; /* Define a cor de fundo */
+    background-color: goldenrod; /* Define a cor de fundo */
     color: #fff; /* Define a cor do texto */
     text-align: center; /* Centraliza o texto */
     padding: 1rem; /* Define um espaçamento interno */
@@ -26,6 +31,7 @@ nav ul {
 nav li {
     display: inline; /* Faz com que os itens da lista fiquem na mesma linha */
     margin-right: 20px; /* Define um espaçamento entre os itens */
+    padding: 4px 12px ;
 }
 
 nav a {
@@ -35,7 +41,7 @@ nav a {
 }
 
 main {
-    padding: 20px; /* Define um espaçamento interno */
+    padding: 30px; /* Define um espaçamento interno */
     overflow: hidden; /* Faz com que o elemento não ultrapasse o tamanho do pai */
 }
 
@@ -51,26 +57,48 @@ main {
 
 .card img {
     max-width: 100%; /* Define a largura máxima da imagem */
-    height: 300px; /* Define a altura da imagem */
+    height: 320px; /* Define a altura da imagem */
 }
 
 .card button {
-    background-color: #333;
+    background-color: black;
     color: #fff;
     border: none;
-    padding: 8px 16px;
-    margin-top: 10px;
+    padding: 10px 18px;
+    margin-top: 12px;
     cursor: pointer; /* Muda o cursor do mouse */
     transition: background-color 0.3s ease; /* Adiciona uma transição suave */
 }
 
 .card button:hover {
-    background-color: #555; /* Muda a cor de fundo ao passar o mouse */
+    background-color: black; /* Muda a cor de fundo ao passar o mouse */
 }
 
 footer {
-    background-color: #333;
+    background-color: goldenrod;
     color: #fff;
     text-align: center;
     padding: 1rem;
+}
+
+nav li {
+    transition: all 1s ease;
+}
+
+nav ul li:hover {
+    background-color: gold;
+    border-radius: 12px;
+    padding: 4px 12px;
+
+    transition: all 1s ease;
+}
+
+nav ul li a:hover {
+    color: gray;
+
+    transition: all 0.5s ease;
+}
+
+main {
+    background-color: whitesmoke ;
 }
